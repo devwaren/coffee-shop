@@ -1,4 +1,4 @@
-import { badge, coffeebeanIcon } from "@/assets";
+import { badge, bestprice, coffeebeanIcon, coffeeIcon } from "@/assets";
 
 const iconList = [
     {
@@ -10,6 +10,16 @@ const iconList = [
         icon: badge,
         title: "High Quality",
         desc: "We provide the highest quality"
+    },
+    {
+        icon: coffeeIcon,
+        title: "Extraordinary",
+        desc: "Coffee like you have never tasted"
+    },
+    {
+        icon: bestprice,
+        title: "Affordable Price",
+        desc: "Our Coffee prices are easy to afford"
     }
 ]
 

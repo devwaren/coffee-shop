@@ -9,5 +9,7 @@ import coffeeIcon from "./coffee-cup.png"
 import coffeeBlastLeft from "./coffee_blast.png"
 import coffeeBlastRight from "./coffee_blast-right.png"
 import coffeeBean from "./coffeebean.png"
+import coffeeBg from "./coffee-bg.png"
+import cup from "./cup.png"
 
-export { badge, expresso, bestprice, coffeeBean, cappuccino, chailattle, coffeebeanIcon, macchiato, coffeeIcon, coffeeBlastLeft, coffeeBlastRight }
+export { cup, badge, coffeeBg, expresso, bestprice, coffeeBean, cappuccino, chailattle, coffeebeanIcon, macchiato, coffeeIcon, coffeeBlastLeft, coffeeBlastRight }
