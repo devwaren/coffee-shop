@@ -1,0 +1,32 @@
+{
+  "name": "vanilla-ts-ssr",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun server.ts",
+    "build": "vite build && vite build --ssr src/entry-server.ts --outDir dist/server",
+    "start": "cross-env NODE_ENV=production bun server.ts",
+    "vercel-build": "vite build && vite build --ssr src/entry-server.ts --outDir dist/server"
+  },
+  "dependencies": {
+    "@boxicons/js": "^1.0.1",
+    "@devwareng/vanilla-ts": "^1.8.41",
+    "@tailwindcss/vite": "^4.2.1",
+    "animate.css": "^4.1.1",
+    "boxicons": "^2.1.4",
+    "express": "^5.2.1",
+    "motion": "^12.38.0",
+    "tailwindcss": "^4.2.1",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.12.0",
+    "cross-env": "^10.1.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vite-plugin-checker": "^0.11.0"
+  }
+}

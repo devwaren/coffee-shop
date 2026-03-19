@@ -1,0 +1,42 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+[data-id] {
+    background-image: url("/resto.webp");
+}
+
+@font-face {
+    font-family: "Resto";
+    src: url("/fonts/Resto.ttf");
+}
+
+@font-face {
+    font-family: "Clicker Script";
+    src: url("/fonts/ClickerScript.ttf");
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("/fonts/Playfair.ttf");
+}
+
+.font-resto {
+    font-family: "Resto";
+}
+
+.font-outfit {
+    font-family: "Outfit";
+}
+
+.font-clicker-script {
+    font-family: "Clicker Script";
+}
+
+.font-playfair {
+    font-family: "Playfair Display";
+}
+
+.bg-coffee {
+    background-image: url("/coffee_image.png");
+}
