@@ -10,14 +10,15 @@
   },
   "dependencies": {
     "@boxicons/js": "^1.0.1",
-    "@devwareng/vanilla-ts": "^1.8.41",
+    "@devwareng/vanilla-ts": "^2.0.0",
     "@tailwindcss/vite": "^4.2.1",
     "animate.css": "^4.1.1",
     "boxicons": "^2.1.4",
     "express": "^5.2.1",
     "motion": "^12.38.0",
     "tailwindcss": "^4.2.1",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@types/bun": "latest",

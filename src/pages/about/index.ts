@@ -8,9 +8,6 @@ export default function About(DOM: HTMLElement) {
     favicon: "/favicon.ico",
   });
 
-  const params = useTSExtractParams("/about");
-
-
   const ui = useTSElements(
     DOM,
     html`

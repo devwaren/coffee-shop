@@ -45,7 +45,7 @@ function Navbar(DOM: HTMLElement) {
     html`
       <div
         id="navbarRoot"
-        class="w-full fixed top-0 left-0 z-50 transition-transform duration-300 ease-in-out"
+        class="w-full fixed top-0 left-0 z-50 transition-transform duration-300 ease-in-out p-4"
       >
         <header class="header w-full py-6 px-4 relative">
           <div class="header-container flex justify-between items-center max-w-440 mx-auto">
@@ -89,8 +89,8 @@ function Navbar(DOM: HTMLElement) {
       </div>
     `,
     {
-      NavList: (el: HTMLElement) => NavList(el),
-      mobileNavList: (el: HTMLElement) => NavList(el),
+      NavList: (el) => NavList(el),
+      mobileNavList: (el) => NavList(el),
       toggleMobileMenu,
     }
   );

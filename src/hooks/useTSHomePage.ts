@@ -1,32 +1,41 @@
-import { CoffeeAbout, CoffeeStyle, Difference, HomeSection } from "@/components/home";
-import { html, mapper } from "@devwareng/vanilla-ts";
+import {
+    CoffeeAbout,
+    CoffeeBlend,
+    CoffeeStyle,
+    Difference,
+    Feedback,
+    HomeSection
+} from "@/components/home";
 
-type Components = {
-    homeSection: (el: HTMLElement) => void;
-    coffeeSection: (el: HTMLElement) => void;
-    coffeeStyle: (el: HTMLElement) => void;
-    difference: (el: HTMLElement) => void;
-}
+import { html, mapper, type ElementHandlers } from "@devwareng/vanilla-ts";
 
 const useTSHomePage = () => {
-    const sections = ["homeSection", "coffeeSection", "coffeeStyle", "difference"]
 
-    const components = mapper(sections, (el) => (
+    const sectionMap = {
+        homeSection: HomeSection,
+        coffeeSection: CoffeeAbout,
+        coffeeStyle: CoffeeStyle,
+        difference: Difference,
+        coffeeBlend: CoffeeBlend,
+        feedBack: Feedback,
+    };
+
+    const components = mapper(Object.keys(sectionMap), (key) =>
         html`
-        <section data-component="${el}" class="w-full"></section>
-    `
-    ))
+            <section data-component="${key}" class="w-full"></section>
+        `);
 
-    const componentMounts: Components = {
-        homeSection: (el) => HomeSection(el),
-        coffeeSection: (el) => CoffeeAbout(el),
-        coffeeStyle: (el) => CoffeeStyle(el),
-        difference: (el) => Difference(el)
-    }
+    const componentMounts: ElementHandlers = Object.fromEntries(
+        Object.entries(sectionMap).map(([key, Component]) => [
+            key,
+            (el) => Component(el),
+        ])
+    );
 
     return {
-        components, componentMounts
-    }
+        components,
+        componentMounts,
+    };
 };
 
 export { useTSHomePage };

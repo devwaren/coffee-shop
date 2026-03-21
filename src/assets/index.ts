@@ -11,5 +11,6 @@ import coffeeBlastRight from "./coffee_blast-right.png"
 import coffeeBean from "./coffeebean.png"
 import coffeeBg from "./coffeebg.png"
 import cup from "./cup.png"
+import beans from "./coffee_bean.png"
 
-export { cup, badge, coffeeBg, expresso, bestprice, coffeeBean, cappuccino, chailattle, coffeebeanIcon, macchiato, coffeeIcon, coffeeBlastLeft, coffeeBlastRight }
+export { beans, cup, badge, coffeeBg, expresso, bestprice, coffeeBean, cappuccino, chailattle, coffeebeanIcon, macchiato, coffeeIcon, coffeeBlastLeft, coffeeBlastRight }

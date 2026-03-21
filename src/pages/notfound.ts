@@ -1,6 +1,7 @@
 import { createSignal, html, useTSElements, useTSMetaData } from "@devwareng/vanilla-ts";
 
 export default function Notfound(DOM: HTMLElement) {
+
   useTSMetaData({
     title: "Notfound",
     description: "Notfound",

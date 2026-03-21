@@ -23,8 +23,8 @@ export function Difference(DOM: HTMLElement) {
                 data-effect="slide-left duration-1200 ease-out"
             >
 
-            <div class="flex gap-4" data-effect="fade-up delay-600 duration-1000 ease-out">
-                ${mapper(iconList, IconCard)}
+            <div class="flex gap-4 flex-wrap items-center justify-center" data-effect="fade-up delay-600 duration-1000 ease-out">
+                ${mapper(iconList, (item, i) => IconCard({ ...item, i }))}
             </div>
 
             <div class="space-y-2" data-effect="fade-up delay-800 duration-1000 ease-out">
